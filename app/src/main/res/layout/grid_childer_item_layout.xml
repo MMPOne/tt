@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/grid_childer_simple"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:actualImageScaleType="centerCrop"
+        android:layout_alignLeft="@+id/grid_childer_text"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/grid_childer_text" />
+
+    <TextView
+       android:id="@+id/grid_childer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/grid_childer_simple"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="12dp"
+        android:text="123"
+        android:textSize="20dp" />
+</RelativeLayout>
